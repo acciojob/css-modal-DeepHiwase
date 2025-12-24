@@ -1,3 +1,4 @@
+/* Initially HIDDEN - CRITICAL for Cypress */
 .modal {
   position: fixed;
   top: 0;
@@ -5,13 +6,9 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  display: none; /* ✅ START HIDDEN */
   justify-content: center;
   align-items: center;
-}
-
-.modal.hidden {
-  display: none;
 }
 
 .modal-content {
@@ -41,6 +38,7 @@
   font-weight: bold;
   cursor: pointer;
   padding: 0 10px;
+  line-height: 1;
 }
 
 .close-modal:hover {
