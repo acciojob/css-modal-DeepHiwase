@@ -1,33 +1,53 @@
-/*  your css code here. If applicable */
-
 .modal {
-	position: fixed; /* Positions the overlay over the entire viewport */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* Use RGBA for a semi-transparent black background */
-  background-color: rgba(0, 0, 0, 0.5); /* 0.5 = 50% opacity */
-  display: flex; /* Centers the modal content */
-  /* justify-content: center;
-  align-items: center */
-	display: ;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
 }
 
 .modal-content {
-	max-width: 800px;
-	width: 80%;
-	margin: 0 auto;
+  max-width: 800px;
+  width: 80%;
+  background: white;
+  border-radius: 8px;
+  max-height: 80vh;
+  overflow-y: auto;
 }
 
-.modal-content > h1 {
-	background-color: green;
-	color: white;
-	padding: 20px;
+.modal-header {
+  background-color: green;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.modal-body{
-	padding: 10px 20px;
-	display: flex;
-	justify-content: space-between;
+.modal-header h2 {
+  margin: 0;
+}
+
+.close-modal {
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.close-modal:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+
+.modal-body {
+  padding: 20px;
 }
