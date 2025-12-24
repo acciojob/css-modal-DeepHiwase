@@ -1,12 +1,22 @@
 /*  your css code here. If applicable */
 
 .modal {
-	width: 100vw;
-	width: 100vh;
+	position: fixed; /* Positions the overlay over the entire viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* Use RGBA for a semi-transparent black background */
+  background-color: rgba(0, 0, 0, 0.5); /* 0.5 = 50% opacity */
+  display: flex; /* Centers the modal content */
+  /* justify-content: center;
+  align-items: center */
+	display: ;
 }
 
 .modal-content {
-	widht: 80%;
+	max-width: 800px;
+	width: 80%;
 	margin: 0 auto;
 }
 
